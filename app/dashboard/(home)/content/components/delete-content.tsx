@@ -36,7 +36,7 @@ const DeleteContent: FC<DeleteContentPageProps> = ({id}) => {
                 });
 
                 window.location.reload();
-            } catch (error) {
+            } catch (error: any) {
                 Swal.fire({
                     icon: "error",
                     title: "Error",

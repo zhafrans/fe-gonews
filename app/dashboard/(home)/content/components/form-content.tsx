@@ -183,7 +183,7 @@ const FormContentPage: FC<FormContentProps> = ({type, defaultValues, categoryLis
                 window.location.reload();
             }
             
-        } catch (error) {
+        } catch (error: any) {
             Swal.fire({
                 icon: "error",
                 title: "Error",
