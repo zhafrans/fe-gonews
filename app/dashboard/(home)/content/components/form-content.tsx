@@ -127,8 +127,9 @@ const FormContentPage: FC<FormContentProps> = ({type, defaultValues, categoryLis
                     excerpt: excerpt,
                     image: imageUrl.data.urlImage,
                     category_id: Number(categoryId),
-                    tags: tags,
+                    tags: tags.split(',').map(tag => tag.trim()),
                     status: status,
+                    created_by_id: 1,
                 })
                 Swal.fire({
                 icon: "success",
@@ -157,8 +158,9 @@ const FormContentPage: FC<FormContentProps> = ({type, defaultValues, categoryLis
                     excerpt: excerpt,
                     image: imageUrl.data? imageUrl.data.urlImage : imageUrl,
                     category_id: Number(categoryId),
-                    tags: tags,
+                    tags: tags.split(',').map(tag => tag.trim()),
                     status: status,
+                    created_by_id: 1,
                 }, defaultValues.id)
 
                 Swal.fire({
