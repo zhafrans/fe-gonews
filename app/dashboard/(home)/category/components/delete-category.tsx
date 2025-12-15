@@ -36,7 +36,7 @@ const DeleteCategory: FC<DeleteCategoryPageProps> = ({id}) => {
                 });
 
                 window.location.reload();
-            } catch (error) {
+            } catch (error: any) {
                 Swal.fire({
                     icon: "error",
                     title: "Error",
