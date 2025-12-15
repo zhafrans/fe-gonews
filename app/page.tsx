@@ -75,7 +75,7 @@ export default function Home() {
                 </div>
                 </Link>
                 <span className="text-xs text-gray-300 ">.</span>
-                <time datetime={"2025-12-10"} className="truncate text-sm">{content.created_at}</time>
+                <time dateTime={"2025-12-10"} className="truncate text-sm">{content.created_at}</time>
               </div>
             </div>
           </div>
